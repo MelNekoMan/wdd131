@@ -1,0 +1,186 @@
+/* Import Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --primary-color: #1e557a;
+    --nav-bg-color: #333333;
+    --text-color: #000000;
+    --light-bg: #f9f9f9;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0 0 0;
+    font-family: var(--heading-font);
+}
+
+header h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+}
+
+header span {
+    display: block;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--nav-bg-color);
+    padding: 0.75rem 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: var(--nav-bg-color);
+    border-radius: 4px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.student-name {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.card-header h2 {
+    font-family: var(--heading-font);
+    font-size: 1.25rem;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.bio-section {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.profile-img {
+    width: 150px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.location-title {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.location-section {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.flag-box {
+    text-align: center;
+    min-width: 150px;
+}
+
+.flag-img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+.caption {
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-top: 0.25rem;
+}
+
+.card-content ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+.card-content li {
+    margin-bottom: 0.5rem;
+}
+
+.card-content a {
+    color: blue;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-family: var(--body-font);
+}
+
+#lastModified {
+    color: #ffffaa;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+}

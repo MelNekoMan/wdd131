@@ -3,9 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 - BYU</title>
+  <title>WDD 131 - Dynamic Web Fundamentals - Melvin Alvarez</title>
+  <meta name="description" content="Personal page of Melvin David Alvarez Fernandez for WDD 131 - Dynamic Web Fundamentals. Explore my student profile, web development projects, and skills.">
+  <meta name="author" content="Melvin David Alvarez Fernandez">
+  <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-  <h1>WDD 131 - Melvin Alvarez</h1>
+  <header>
+    <h1>WDD 131: Dynamic Web Fundamentals</h1>
+    <nav>
+      <a href="https://www.linkedin.com/in/melnekoman" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://byui.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/philip/3?lang=eng&id=p13#p13" target="_blank" rel="noopener noreferrer">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="student-name">Melvin Alvarez</h1>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>About Me</h2>
+      </div>
+      <div class="card-content">
+        <div class="bio-section">
+          <p>
+            My name is Melvin, and I'm currently studying Software Development through BYU-Pathway Worldwide. I love everything related to Programming and solving complex logical problems. When I'm not studying, I work on an automated Doppelmayr cable car system, and sometimes I do electrical repairs and car scans, while other times I perform computer diagnostics.
+            You can also find me working out at the gym.
+          </p>
+          <img src="images/profile.jpg" alt="Melvin Alvarez Profile Picture" class="profile-img">
+        </div>
+
+        <div class="location-title">
+          <h3>Caracas, Venezuela</h3>
+        </div>
+        
+        <div class="location-section">
+          <div class="flag-box">
+            <img src="images/flag.webp" alt="Official Flag" class="flag-img">
+            <p class="caption">Official Flag</p>
+          </div>
+          <p class="location-desc">
+            Venezuela is a beautiful country located on the northern coast of South America, known for its incredible natural diversity, ranging from the majestic Andes mountains to the Caribbean coastline. Its capital, Caracas, sits in a vibrant valley surrounded by the famous Avila Mountain. The country is celebrated for its warm people, rich cultural heritage, and iconic landmarks like Angel Falls, the world's highest uninterrupted waterfall.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="scriptures">
+      <div class="card-header">
+        <h2>Web Dev Resources</h2>
+      </div>
+      <div class="card-content">
+        <ul>
+          <li><a href="https://dev.to" target="_blank" rel="noopener noreferrer">Dev.to Community</a></li>
+          <li><a href="https://smashingmagazine.com" target="_blank" rel="noopener noreferrer">Smashing Magazine</a></li>
+          <li><a href="https://css-tricks.com" target="_blank" rel="noopener noreferrer">CSS Tricks</a></li>
+          <li><a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
+          <li><a href="https://www.udemy.com" target="_blank" rel="noopener noreferrer">Udemy</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">Scriptures Link or Resource</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy;<span id="currentyear"></span> | Melvin D. Alvarez F. | Venezuela
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="scripts/getdates.js" defer></script>
 </body>
 </html>
