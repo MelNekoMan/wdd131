@@ -26,7 +26,7 @@
         flex-direction: row;
         justify-content: flex-end;
         width: auto;
-        background-color: transparent;
+        background-color: #00000000;
         margin-top: 0;
     }
 
