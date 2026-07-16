@@ -1,0 +1,47 @@
+@media (min-width: 600px) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .header-info {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        margin-top: 0;
+    }
+
+    #course-title {
+        width: auto;
+        margin-top: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: auto;
+        background-color: transparent;
+        margin-top: 0;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    nav a:hover {
+        background-color: #ffffff;
+        color: var(--primary-color);
+    }
+
+    .res-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+}

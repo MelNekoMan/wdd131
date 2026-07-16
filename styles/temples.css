@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #1e557a;
+    --nav-bg-color: #333333;
+    --text-color: #333333;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-family: var(--heading-font);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+}
+
+header.info {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+header > span:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#course-title {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+#student-name {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--nav-bg-color);
+    margin-top: 0.75rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: var(--nav-bg-color);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+.page-name {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: 0.75rem;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-family: var(--body-font);
+}
+
+#lastModified {
+    color: #ffffaa;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
