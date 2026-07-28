@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Country Page - Melvin Alvarez</title>
+  <meta name="description" content="Explore Venezuela: essential facts, geographic data, and current weather conditions.">
+  <meta name="author" content="Melvin David Alvarez Fernandez">
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script src="scripts/place.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <span id="course-title">Country Page</span>
+    <h1> Venezuela</h1>
+  </header>
+
+  <main>
+    <div class="hero">
+      <picture>
+        <source media="(min-width: 600px)" srcset="images/hero-image.webp">
+        <img src="images/hero-small.webp" alt="Aerial and landscape view of Avila Mountain in Caracas - Venezuela" width="500" height="300">
+      </picture>
+
+      <section class="card data-card">
+        <h2>Data</h2>
+        <ul>
+          <li><span class="label">Area:</span> <span class="value">916,445 km²</span></li>
+          <li><span class="label">Population:</span> <span class="value">28.633.711</span></li>
+          <li><span class="label">Capital:</span> <span class="value">Caracas</span></li>
+          <li><span class="label">Language:</span> <span class="value">Spanish</span></li>
+          <li><span class="label">Currency:</span> <span class="value">Bolívar Digital - Bs.D</span></li>
+          <li><span class="label">Time Zone:</span> <span class="value">UTC-4</span></li>
+          <li><span class="label">Calling Code:</span> <span class="value">+58</span></li>
+          <li><span class="label">Internet TLD:</span> <span class="value">.ve</span></li>
+        </ul>
+      </section>
+      <section class="card weather-card">
+        <h2>Weather</h2>
+        <img src="images/weather-icon.svg" alt="Weather Icon" class="weather-icon-mobile">
+        <ul>
+          <li><span class="label">Temperature:</span> <span class="value"><span id="temp">23</span> °C</li>
+          <li><span class="label">Conditions:</span> <span class="value">Partly Cloudy</span></li>
+          <li><span class="label">Wind:</span> <span class="value"><span id="wind">6.5</span> km/h</li>
+          <li><span class="label">Wind Chill:</span> <span class="value" id="chill">N/A</span></li>
+        </ul>
+      </section>  
+    </div>    
+  </main>
+
+  <footer>
+    <p>
+      &copy;<span id="currentyear"></span> | Melvin D. Alvarez F. | Venezuela
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
