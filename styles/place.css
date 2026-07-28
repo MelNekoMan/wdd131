@@ -23,7 +23,7 @@ body {
 
 header {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--bg-color);
   text-align: center;
   padding: 1rem;
   border-bottom: 4px solid var(--accent-color);
@@ -73,7 +73,7 @@ header h1 {
   display: flex;
   justify-content: space-between;
   padding: 0.4rem 0;
-  border-bottom: 1px dashed #ddd;
+  border-bottom: 1px dashed var(--bg-color);
 }
 
 .label {
@@ -89,7 +89,7 @@ header h1 {
 
 footer {
   background-color: var(--secondary-color);
-  color: white;
+  color: var(--bg-color);
   text-align: center;
   padding: 1rem;
   margin-top: 1.5rem;
