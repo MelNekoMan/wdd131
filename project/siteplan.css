@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #1e293b;
+    --accent-color: #2563eb;
+    --background-color: #f4f6f9;
+    --card-background: #ffffff;
+    --text-color: #333333;
+    --box-shadow: rgba(0,0,0,0.05);
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font)
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--heading-font);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    font-family: var(--body-font);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 24px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header h2 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.plan-section {
+    background: var(--card-background);
+    border-left: 5px solid var(--accent-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: var(--box-shadow)
+}
+
+.plan-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.plan-section ul {
+    margin-left: 20px;
+}
+
+.color-box {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.primary-bg { background-color: #1e293b; }
+.accent-bg { background-color: #2563eb; }
+.bg-box { background-color: #f4f6f9; border: 1px solid var(--background-color); }
+
+.wireframe-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.wireframe-container div {
+    flex: 1;
+    min-width: 280px;
+    background: var(--background-color);
+    padding: 16px;
+    border-radius: 6px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.wireframe-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: var(--primary-color);
+}
