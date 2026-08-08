@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Product Review Form - Melvin Alvarez</title>
+  <meta name="description" content="Product review form assignment.">
+  <meta name="author" content="Melvin David Alvarez Fernandez">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+        <form method="get" action="review.html">
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="rating">
+                    <input type="radio" id="star1" name="rating" value="1" required>
+                    <label for="star1">☆ 1</label>
+
+                    <input type="radio" id="star2" name="rating" value="2" required>
+                    <label for="star2">☆ 2</label>
+
+                    <input type="radio" id="star3" name="rating" value="3" required>
+                    <label for="star3">☆ 3</label>
+
+                    <input type="radio" id="star4" name="rating" value="4" required>
+                    <label for="star4">☆ 4</label>
+
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">☆ 5</label>
+                </div>
+            </fieldset>
+
+            <label for="install-date">Date of Installation</label>
+            <input type="date" id="install-date" name="installDate" required>
+
+            <fieldset>
+                <legend>Useful Features (Check all that apply)</legend>
+                <div class="features">
+                    <input type="checkbox" id="feature-durability" name="features" value="durability">
+                    <label for="feature-durability">Durability</label>
+
+                    <input type="checkbox" id="feature-ease" name="features" value="ease-of-use">
+                    <label for="feature-ease">Ease of Use</label>
+
+                    <input type="checkbox" id="feature-performance" name="features" value="performance">
+                    <label for="feature-performance">Performance</label>
+
+                    <input type="checkbox" id="feature-design" name="features" value="design">
+                    <label for="feature-design">Design</label>
+                </div>
+            </fieldset>
+
+            <label for="review">Written Review (Optional)</label>
+            <textarea id="review" name="review" rows="4"></textarea>
+
+            <label for="username">Your Name (Optional)</label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Post Review">
+        </form>
+    
+  </main>
+
+  <footer>
+    <p>
+      &copy;<span id="currentyear"></span> | Melvin D. Alvarez F. | Venezuela
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

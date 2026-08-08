@@ -1,0 +1,184 @@
+:root {
+    --primary-color: #1e3a8a;
+    --primary-hover: #1d4ed8;
+    --bg-color: #f8fafc;
+    --surface-alt: #fafafa;
+    --text-color: #1e293b;
+    --text-light: #ffffff;
+    --text-muted: #64748b;
+    --border-color: #cbd5e1;
+    --focus-ring: #93c5fd;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    --font-family: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    box-shadow: var(--shadow-sm);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form, .confirmation-container {
+    background-color: var(--surface-alt);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+}
+
+label, legend {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+    color: var(--text-color);
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: var(--text-light);
+    color: var(--text-color);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-hover);
+    box-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    background-color: var(--surface-alt);
+}
+
+legend {
+    padding: 0 0.35rem;
+}
+
+.rating, .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 0.25rem;
+}
+
+.rating label, .features label {
+    font-weight: 400;
+    margin-bottom: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 1.1rem;
+    height: 1.1rem;
+    accent-color: var(--primary-hover);
+    cursor: pointer;
+}
+
+input[type="submit"], .btn {
+    display: inline-block;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 0.5rem;
+}
+
+input[type="submit"]:hover, .btn:hover {
+    background-color: var(--primary-hover);
+}
+
+input[type="submit"]:active, .btn:active {
+    transform: scale(0.99);
+}
+
+.confirmation-container {
+    text-align: center;
+}
+
+.confirmation-container h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.confirmation-container p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+#review-count {
+    font-weight: 700;
+    color: var(--primary-hover);
+    font-size: 1.25rem;
+}
