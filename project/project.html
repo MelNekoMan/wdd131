@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - OBD-II Diagnostic & Sensor Guide - Melvin Alvarez</title>
+  <meta name="description" content="Beginner-friendly OBD-II vehicle diagnostic and engine sensor reference guide. Search fault codes, understand sensor symptoms, and resolve vehicle issues.">
+  <meta name="author" content="Melvin David Alvarez Fernandez">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script src="scripts/project.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-top">
+      <div class="brand-container">
+        <div class="logo-box">
+          <img src="images/logo.png" alt="OBD-II Guide Logo" class="site-logo" width="40" height="40">
+          </div>
+          <h1 class="site-title">OBD-II Diagnostic & Sensor Guide</h1>
+        </div>
+
+        <div class="student-info">
+          <span class="course-code">WDD-131 Dynamic Web Fundamentals</span>
+          <span class="student-name">Melvin D. Alvarez F.</span>
+        </div>
+      </div>
+
+      <div class="header-sub">
+        <p class="site-tagline">A Beginner's Quick Reference for Vehicle Diagnostics</p>
+          
+        <nav class="main-nav" aria-label="Main Navigation">
+          <ul>
+            <li><a href="project.html" class="nav-btn active">Home</a></li>
+            <li><a href="contact.html" class="nav-btn">Contact</a></li>
+            <li><a href="https://melnekoman.github.io/wdd131/index.html" class="nav-btn">About Me</a></li>
+          </ul>
+        </nav>
+      </div>
+  </header>
+
+  <main class="hero-container">
+    <h2 class="sr-only">Diagnostic Search & Reference Cards</h2>
+
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search by code, sensor, or symptom..." aria-label="Search diagnostic codes or sensors">
+    </div>
+
+    <div class="filter-bar">
+      <button type="button" class="filter-btn active" data-category="all">Show All</button>
+      <button type="button" class="filter-btn" data-category="code">Diagnostic Codes</button>
+      <button type="button" class="filter-btn" data-category="sensor">Sensor Definitions</button>
+    </div>
+
+    <div class="cards-grid" id="cards-grid">
+
+    </div>
+  </main>
+
+  <div id="details-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <button type="button" class="close-modal" id="close-modal" aria-label="Close modal">&times;</button>
+      <div id="modal-body">
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+      <p>&copy; <span id="current-year"></span> Melvin D. Alvarez F. | Caracas, Venezuela</p>
+      <p id="last-modified" class="modification-date"></p>
+  </footer>
+
+</body>
+</html>

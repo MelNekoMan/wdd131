@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Contact & Feedback - Melvin Alvarez</title>
+  <meta name="description" content="Contact form for OBD-II Diagnostic & Sensor Guide feedback, questions, or diagnostic inquiries.">
+  <meta name="author" content="Melvin David Alvarez Fernandez">
+  
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  <script src="scripts/project.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-top">
+      <div class="brand-container">
+        <div class="logo-box">
+          <img src="images/logo.png" alt="OBD-II Guide Logo" class="site-logo" width="40" height="40">
+        </div>
+        <h1 class="site-title">OBD-II Diagnostic & Sensor Guide</h1>
+      </div>
+
+      <div class="student-info">
+        <span class="course-code">WDD-131 Dynamic Web Fundamentals</span>
+        <span class="student-name">Melvin D. Alvarez F.</span>
+      </div>
+    </div>
+
+    <div class="header-sub">
+      <p class="site-tagline">A Beginner's Quick Reference for Vehicle Diagnostics</p>
+        
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="project.html" class="nav-btn">Home</a></li>
+          <li><a href="#about" class="nav-btn">About</a></li>
+          <li><a href="contact.html" class="nav-btn active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero-container">
+    <h2 class="form-title">Diagnostic Feedback & Contact</h2>
+
+    <!-- WDD 131 Standard HTML5 Form -->
+    <form action="thanks.html" method="get" class="feedback-form">
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+        
+        <label for="fname">First Name *</label>
+        <input type="text" id="fname" name="fname" required placeholder="John">
+
+        <label for="lname">Last Name *</label>
+        <input type="text" id="lname" name="lname" required placeholder="Doe">
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="user@example.com">
+      </fieldset>
+
+      <fieldset>
+        <legend>Diagnostic Query</legend>
+
+        <label for="user-type">User Category *</label>
+        <select id="user-type" name="user_type" required>
+          <option value="" disabled selected>Select an option...</option>
+          <option value="diy">DIY Mechanic</option>
+          <option value="student">Student / Hobbyist</option>
+          <option value="professional">Professional Technician</option>
+        </select>
+
+        <label for="code-query">DTC Code / Sensor Inquiry</label>
+        <input type="text" id="code-query" name="code_query" placeholder="e.g., P0300, O2 Sensor">
+
+        <label for="comments">Message / Description *</label>
+        <textarea id="comments" name="comments" rows="5" required placeholder="Describe vehicle symptoms or ask a question..."></textarea>
+      </fieldset>
+
+      <button type="submit" class="submit-btn">Send Inquiry</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> Melvin D. Alvarez F. | Caracas, Venezuela</p>
+    <p id="last-modified" class="modification-date"></p>
+  </footer>
+
+</body>
+</html>
