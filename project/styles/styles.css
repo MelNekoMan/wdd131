@@ -347,11 +347,10 @@ body {
   margin-bottom: 12px;
 }
 
-/* Footer */
 .site-footer {
   text-align: center;
   padding: 16px;
-  color: var(--text-muted);
+  color: var(--text-primary);
   font-size: 0.9rem;
   border-top: 2px solid var(--black);
   margin-top: 24px;
